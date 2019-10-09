@@ -115,7 +115,7 @@ body {
 
 ol,
 ul {
-    list-style: none;
+    list-style: ;
 }
 
 blockquote,
@@ -210,7 +210,7 @@ h5 {
     border: 1px solid black;
     padding: 10px;
     align-items: center;
-    align-content: stretch;
+    align-content: center;
 }
 
 .header-img {
@@ -282,23 +282,24 @@ h2 {
     align-content: center;
     flex-direction: column;
     padding: 50px;
+    flex-wrap: wrap;
 }
 
 .flex-container-2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
 }
 
 .flex-container-3 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
 }
 
 .flex-container-4 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
 }
 
@@ -307,8 +308,10 @@ h2 {
     flex-direction: column;
     border: 2px solid black;
     padding: 20px;
+    margin: 20px;
     align-content: center;
     justify-content: center;
+    background: lightgrey;
 }
 
 .flex-item p {
@@ -318,4 +321,55 @@ h2 {
 .flex-item button {
     padding: 10px;
     width: 100px;
+}
+
+#our-services {
+    border: none;
+    background: white;
+    flex-direction: column;
+}
+
+#list {
+    list-style: bullets;
+    flex-direction: column;
+    border: none;
+    background: white;
+    margin: 10px;
+    width: 100%;
+}
+
+#our-services h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+#our-services p {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+#top-services h1 {
+    font-size: 20px;
+}
+
+.services-info-img {
+    display: flex;
+    float: right;
+}
+
+.flex-container-5 {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.flex-item-5 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    background: lightgrey;
 }
